@@ -1,1 +1,299 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    font-family: 'GoshaSans', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 0;
+    font-size: 3em;
+}
+h2 {
+    font-family: 'Gilroy-SemiBold', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-size: 1.5em;
+}
+p {
+    color: var(--main-color-black);
+    font-size: 1.125em;
+    margin-bottom: 43px;
+    line-height: 29.16px;
+}
+.orders-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    margin-block: 40px;
+}
+.orders-inner .orders-left {
+    width: 47%;
+    padding-right: 50px;
+}
+.orders-inner .orders-left .order-form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.orders-inner .orders-left .order-form .input-text {
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 0.5px solid hsla(0, 0%, 50%, 1);
+    padding: 0;
+    padding-bottom: 1em;   
+    margin: 0;
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 50%, 1);
+    font-size: 1em;
+    font-family: 'Gilroy', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.36px;
+}
+.orders-inner .orders-left .order-form .checkbox-row {
+    display: flex;
+    gap: 1em;
+}
+.orders-inner .orders-left .order-form input[type=checkbox] {
+    height: 20px;
+    width: 20px;
+    align-self: center;
+}
+.orders-inner .orders-left .order-form .checkbox-row a {
+    color: hsla(0, 0%, 50%, 1);
+    font-size: 1em;
+    font-family: 'Gilroy', "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.orders-inner .orders-left .order-btn {
+    margin-top: 43px;
+    padding: 26px 87px;
+    width: fit-content;
+}
+.orders-inner .orders-right .order-btn {
+    display: none;
+    margin-top: 24px;
+    padding: 12px 48px;
+    width: 100%;
+    font-size: 12px;
+    border-radius: 6px;
+}
+.orders-right {
+    width: 53%;
+}
+.orders-right .order-form.additional.light {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 46px 50px;
+    margin-bottom: 26px;
+}
+.orders-inner .orders-right .order-form .order-form-row {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    font-family: 'Gilroy-Medium', "Arial", sans-serif;
+    font-weight: 500;
+}
+.orders-right .order-form.additional.light .order-form-row  .checkbox-row {
+    display: flex;
+    gap: 1.125em;
+}
+.orders-right .order-form.additional.light .order-form-row  .checkbox-row input {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+.orders-right .order-form.additional.light .order-form-row  .checkbox-row label {
+    display: flex;
+    align-items: center;
+}
+.orders-inner .orders-left .order-form .order-form-row .price {
+    white-space: nowrap;
+}
+.orders-right .order-form.order-sum.light {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 42px 52px;
+}
+.orders-right .order-form.order-sum.light .order-form-row {
+    font-size: 0.875em;
+    margin-bottom: 25px;
+}
+.orders-right .order-form.order-sum.light .order-form-row .price {
+    color: var(--main-color-dark-green);
+}
+.orders-right .order-form.order-sum.light .sum {
+    margin-top: 45px;
+    padding-top: 45px;
+    border-top: 0.5px solid hsla(0, 0%, 50%, 1);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+.orders-right .order-form.order-sum.light .sum .title {
+    font-weight: 600;
+}
+.orders-right .order-form.order-sum.light .sum .price {
+    font-family: 'GoshaSans', "Arial", sans-serif;
+    color: var(--main-color-dark-green);
+    font-style: normal;
+    font-weight: 400;
+    white-space: nowrap;
+}
 
+@media (max-width: 899px) {
+    h1 {
+        font-size: 2.25em;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 0.69em;
+        margin-bottom: 26px;
+        line-height: 17.81px;
+    }
+    .orders-inner {
+        gap: 1em;
+        margin-block: 46px;
+    }
+    .orders-inner .orders-left {
+        width: 47%;
+        padding-right: 0;
+    }
+    .orders-inner .orders-left .order-form .input-text {
+        border-bottom: 0.3px solid hsla(0, 0%, 50%, 1);
+        padding-bottom: 0.7em;   
+        margin-bottom: 18px;
+        font-size: 0.7em;
+        line-height: 16.71px;
+    }
+    .orders-inner .orders-left .order-form .checkbox-row {
+        gap: 6px;
+    }
+    .orders-inner .orders-left .order-form .checkbox-row label {
+        font-size: 0.625em;
+    }
+    .orders-inner .orders-left .order-form input[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+    .orders-inner .orders-left .order-btn {
+        margin-top: 26px;
+        padding: 14px 54px;
+        font-size: 0.875em;
+        border-radius: 7px;
+    }
+    .orders-right .order-form.additional.light {
+        border-radius: 10px;
+        padding: 28px 30px;
+        margin-bottom: 16px;
+    }
+    .orders-right h2 {
+        font-size: 1.125em;
+    }
+    .orders-inner .orders-right .order-form .order-form-row {
+        font-size: 0.625em;
+        margin-bottom: 12px;
+    }
+    .orders-right .order-form.additional.light .order-form-row  .checkbox-row {
+        gap: 15px;
+    }
+    .orders-right .order-form.additional.light .order-form-row  .checkbox-row input {
+        width: 14px;
+        height: 14px;
+    }
+    .orders-right .order-form.order-sum.light {
+        border-radius: 10px;
+        padding: 25px 31px;
+    }
+    .orders-right .order-form.order-sum.light .order-form-row {
+        font-size: 0.625em;
+        margin-bottom: 15px;
+    }
+    .orders-right .order-form.order-sum.light .sum {
+        margin-top: 27px;
+        padding-top: 27px;
+        border-top: 0.3px solid hsla(0, 0%, 50%, 1);
+        font-size: 0.875em;
+    }
+}
+@media (max-width: 599px) {
+    h1 {
+        font-size: 1em;
+        margin-bottom: 12px;
+    }
+    p {
+        font-size: 0.75em;
+        line-height: 19.44px;
+        margin-bottom: 30px;
+    }
+    .orders-inner {
+        flex-direction: column;
+        gap: 2.25em;
+        margin-block: 36px;
+    }
+    .orders-inner .orders-left, .orders-inner .orders-right {
+        width: 100%;
+    }
+    .orders-inner .orders-left .order-form .input-text {
+        border-bottom: 0.5px solid hsla(0, 0%, 50%, 1);
+        padding-bottom: 10px;   
+        margin-bottom: 14px;
+        font-size: 0.75em;
+        line-height: 20px;
+    }
+    .orders-inner .orders-left .order-form .checkbox-row {
+        gap: 8px;
+    }
+    .orders-inner .orders-left .order-form .checkbox-row label {
+        font-size: 0.625em;
+    }
+    .orders-inner .orders-left .order-form input[type=checkbox] {
+        height: 12px;
+        width: 12px;
+    }
+    .orders-inner .orders-left .order-btn {
+        display: none;
+    }
+    .orders-inner .orders-right .order-btn {
+        display: inline-block;
+    }
+    .orders-right .order-form.additional.light {
+        border-radius: 11px;
+        padding: 26px 10px;
+        margin-bottom: 12px;
+    }
+    .orders-right h2 {
+        font-size: 1em;
+    }
+    .orders-inner .orders-right .order-form .order-form-row {
+        font-size: 0.625em;
+        margin-bottom: 13px;
+    }
+    .orders-right .order-form.additional.light .order-form-row  .checkbox-row {
+        gap: 9px;
+    }
+    .orders-right .order-form.additional.light .order-form-row  .checkbox-row input {
+        width: 14px;
+        height: 14px;
+    }
+    .orders-right .order-form.order-sum.light {
+        border-radius: 11px;
+        padding: 26px 10px;
+    }
+    .orders-right .order-form.order-sum.light .order-form-row {
+        font-size: 0.625em;
+        margin-bottom: 13px;
+    }
+    .orders-right .order-form.order-sum.light .sum {
+        margin-top: 14px;
+        padding-top: 14px;
+        border-top: 0.4px solid hsla(0, 0%, 50%, 1);
+        font-size: 1em;
+    }
+}
